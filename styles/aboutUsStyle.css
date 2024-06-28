@@ -14,14 +14,9 @@ header {
     padding: 10px 20px;
 }
 
-.logo h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.logo h2 {
-    margin: 0;
-    font-size: 14px;
+.logo {
+    width: 180px;
+    height: auto;
 }
 
 nav ul {
