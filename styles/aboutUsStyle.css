@@ -9,7 +9,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #5D387F;
+    background: linear-gradient(to bottom, #1A0129, #463454);
     color: white;
     padding: 10px 20px;
 }
@@ -76,7 +76,7 @@ main {
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: #5D387F;
+    background: linear-gradient(to top, #1A0129, #463454);
     color: white;
     padding: 20px;
 }
