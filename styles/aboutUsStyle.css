@@ -86,6 +86,10 @@ footer {
     margin: 0 10px;
 }
 
+h3 {
+    color: #FF9F00;
+}
+
 .footer-section h3 {
     margin-top: 0;
 }
