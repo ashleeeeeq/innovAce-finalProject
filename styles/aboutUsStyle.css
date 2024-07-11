@@ -89,6 +89,16 @@ footer {
     flex: 1;
     margin: 0 10px;
 }
+.footer-section p {
+    display: flex;
+    align-items: center;
+}
+
+.footer-section p img {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
 
 .footer-section h3 {
     margin-top: 0;
