@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to bottom, #1A0129, #463454);
+    background: #956CA4;
     color: white;
     padding: 10px 20px;
 }
@@ -77,7 +77,7 @@ main {
 }
 
 footer {
-    background: linear-gradient(to top, #1A0129, #463454);
+    background: linear-gradient(to right, #775792, #552C60);
     color: white;
     padding: 20px;
     display: flex;
