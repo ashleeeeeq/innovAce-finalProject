@@ -43,6 +43,12 @@ body {
     border: 1px solid #2E1E3D;
 }
 
+.btn-primary:hover {
+    background-color: #F2E6F4;
+    color: black;
+    border: 1px solid #2E1E3D;
+  }
+
   header {
     background: rgba(255, 255, 255, 0.7)
       url(header\ pic.png);
