@@ -1,0 +1,473 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #5d3b66;
+  --primary-color-shadow: #62456d;
+  --secondary-color: #fbc658;
+  --secondary-color-light: #f5d9a2;
+  --secondary-color-shadow: #e2b250;
+  --background-color: #d9c9df;
+  --tertiary-color: #fafafa;
+  --font-1: "Poppins", sans-serif;
+  --font-2: "Playfair Display", serif;
+  --font-3: "swiper-icons", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+}
+
+#petalgram-logo {
+  height: 60px;
+  width: 180px;
+}
+
+.navbar ul li {
+  padding: 0px 25px;
+}
+
+.navbar ul li a {
+  color: var(--tertiary-color);
+  font-size: 0.9rem;
+  font-family: var(--font-1);
+  transition: color 200ms ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.navbar ul li i {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 200ms ease-in-out;
+}
+
+.navbar ul li i:hover {
+  color: var(--secondary-color-light);
+}
+
+#cartText,
+#userText {
+  display: none;
+}
+
+/* changes toggler icon color */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(251, 198, 88, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* hero section */
+
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  height: 450px;
+  background-color: #1a1a1a;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("https://i.ibb.co/kMstTfp/hero-bg.jpg") no-repeat;
+  opacity: 0.5;
+  background-size: cover;
+  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-family: var(--font-2);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+.hero p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  font-family: var(--font-1);
+  color: var(--tertiary-color);
+}
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+.hero .btn:hover {
+  background-color: #6200ea;
+}
+.hero .content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.hero .text-content {
+  flex: 1;
+  padding: 20px;
+}
+.hero .image-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero .btn-lg {
+  background: var(--secondary-color-shadow);
+  padding: 5px 25px;
+  color: var(--primary-color);
+  border-radius: 10px;
+  font-family: var(--font-1);
+  font-size: 0.9rem;
+  transition: background-color 200ms ease-in-out;
+}
+
+.hero .btn-lg:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* main */
+
+.best-sellers {
+  height: 800px;
+  width: 100%;
+  margin: 80px auto;
+}
+
+.best-seller-header {
+  font-size: 1.55rem;
+  font-family: var(--font-2);
+  position: relative;
+  font-weight: 500;
+}
+
+.best-seller-header::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 128px;
+  background-color: var(--primary-color);
+  bottom: -2px;
+}
+
+.best-sellers h4 {
+  font-size: 1.4rem;
+  font-family: var(--font-1);
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.best-sellers p {
+  font-family: var(--font-1);
+}
+
+.best-sellers a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.best-sellers:visited {
+  color: var(--primary-color-shadow);
+}
+
+.carousel-content a:hover {
+  text-decoration: underline;
+}
+
+/* discount */
+.discount-banner {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 0;
+  overflow: hidden;
+  height: 180px;
+}
+
+.discount-info {
+  max-width: 500px;
+}
+
+.discount-info h2 {
+  font-size: 1.5rem;
+  font-family: var(--font-1);
+}
+
+.discount-info p {
+  font-size: 0.95rem;
+  font-family: var(--font-1);
+}
+
+.discount-percentage {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: var(--font-1);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-right: 25px;
+}
+
+.discount-banner #flower-discount-img {
+  height: 400px;
+  width: 350px;
+}
+
+footer {
+  background: var(--primary-color);
+}
+
+footer a,
+footer li {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .fs-6 {
+  color: var(--secondary-color);
+}
+
+footer .copyright-line-break {
+  height: 1px;
+  width: 100%;
+  background: var(--secondary-color);
+  margin: 30px 0 10px 0;
+}
+
+footer #copyright {
+  font-family: var(--font-2);
+  color: var(--secondary-color);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.icon-custom-color {
+  fill: var(--secondary-color);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar ul li {
+    padding: 15px 0px;
+  }
+
+  #cart,
+  #user {
+    display: none;
+  }
+
+  #cartText,
+  #userText {
+    display: block;
+  }
+
+  /* hero */
+  .hero h1 {
+    font-family: var(--font-2);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+
+  /* Not done yet will change these later */
+  .best-sellers {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 200px;
+  }
+
+  .best-sellers-container {
+    width: 100%;
+  }
+
+  .carousel-content h4 {
+    font-size: 1rem;
+  }
+
+  .carousel-content p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-content a {
+    font-size: 1rem;
+  }
+
+  /* discount */
+  .discount-banner {
+    padding: 1.5rem;
+    margin: 0 0 100px 0;
+    height: 180px;
+  }
+
+  .discount-img-container,
+  #flower-discount-img {
+    display: none;
+  }
+
+  .discount-percentage {
+    margin-right: 0;
+  }
+
+  .discount-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .discount-info p {
+    font-size: 0.85rem;
+  }
+
+  .discount-percentage {
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar ul li {
+    padding: 15px 0px;
+  }
+
+  #cart,
+  #user {
+    display: none;
+  }
+
+  #cartText,
+  #userText {
+    display: block;
+  }
+
+  /* hero */
+  .hero h1 {
+    font-family: var(--font-2);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+
+  /* Not done yet will change these later */
+  .best-sellers {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 600px;
+  }
+
+  .best-sellers-container {
+    width: 100%;
+  }
+
+  .carousel-img {
+    height: 400px;
+  }
+
+  #copyright {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar ul li {
+    padding: 2px 0px;
+  }
+
+  .hero h1 {
+    font-family: var(--font-2);
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 0.6rem;
+    margin-bottom: 20px;
+  }
+
+  .hero .btn-lg {
+    padding: 5px 20px;
+    font-size: 0.7rem;
+  }
+
+  .best-seller-header {
+    font-size: 1.1rem;
+  }
+
+  .best-seller-header::before {
+    width: 92px;
+    bottom: -2px;
+  }
+
+  footer .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .best-sellers {
+    height: 1100px;
+    width: 100%;
+    margin-bottom: 200px;
+  }
+
+  .discount-info h2 {
+    font-size: 1rem;
+  }
+
+  .discount-info p {
+    font-size: 0.75rem;
+  }
+
+  .discount-percentage {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
