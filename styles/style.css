@@ -22,6 +22,20 @@
   --font-3: "swiper-icons", serif;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--tertiary-color); /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color); /* Thumb color */
+  border-radius: 20px; /* Roundness */
+  border: 3px solid var(--tertiary-color); /* Padding around thumb */
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -72,6 +86,16 @@ body {
 /* changes toggler icon color */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(251, 198, 88, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
 }
 
 /* hero section */
@@ -246,6 +270,29 @@ body {
 .discount-banner #flower-discount-img {
   height: 400px;
   width: 350px;
+}
+
+/* Back to Top Button */
+#backToTop {
+  display: none; 
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99; 
+  border: none;
+  outline: none;
+  background-color: var(--primary-color-shadow);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-5px);
 }
 
 footer {
@@ -471,3 +518,4 @@ footer #copyright {
     padding: 0.3rem 0.8rem;
   }
 }
+
