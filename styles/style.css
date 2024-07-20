@@ -232,6 +232,10 @@ body {
   text-decoration: underline;
 }
 
+.slide {
+  margin-top: 20px;
+}
+
 /* discount */
 .discount-banner {
   background-color: var(--primary-color);
