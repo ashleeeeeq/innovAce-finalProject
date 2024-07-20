@@ -53,8 +53,7 @@ body {
 }
 
 #home{
-  color: #e2b250;
-  text-decoration: underline;
+  color: var(--secondary-color);
 }
 
 .navbar ul li {
