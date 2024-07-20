@@ -186,7 +186,7 @@ body {
 .best-sellers {
   height: 800px;
   width: 100%;
-  margin: 80px auto -100px auto;
+  margin: 80px auto;
 }
 
 .best-seller-header {
@@ -248,7 +248,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   justify-content: space-between;
-  margin: 200px auto 100px auto;
+  margin: 100px 0;
   overflow: hidden;
   height: 180px;
 }
@@ -354,6 +354,7 @@ footer #copyright {
   .best-sellers {
     height: 800px;
     width: 100%;
+    margin-bottom: 200px;
   }
 
   .best-sellers-container {
@@ -379,8 +380,7 @@ footer #copyright {
   /* discount */
   .discount-banner {
     padding: 1.5rem;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 0 0 100px 0;
     height: 180px;
   }
 
@@ -443,14 +443,11 @@ footer #copyright {
   .best-sellers {
     height: 800px;
     width: 100%;
+    margin-bottom: 600px;
   }
 
   .best-sellers-container {
     width: 100%;
-  }
-
-  .discount-banner {
-    margin-top: 100px;
   }
 
   .carousel-img {
@@ -492,10 +489,6 @@ footer #copyright {
     bottom: -2px;
   }
 
-  .discount-banner {
-    margin-top: 100px;
-  }
-
   footer .d-flex {
     flex-direction: column;
     align-items: center;
@@ -506,11 +499,7 @@ footer #copyright {
   .best-sellers {
     height: 1100px;
     width: 100%;
-    margin-bottom: 50px;
-  }
-
-  .discount-banner {
-    margin-top: 100px;
+    margin-bottom: 200px;
   }
 
   .discount-info h2 {
