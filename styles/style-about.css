@@ -184,7 +184,7 @@ body {
 
 /* main */
 .mission-section {
-  margin: 80px auto;
+  margin: 40px auto;
   padding: 10px 0;
   font-family: var(--font-1);
   border-radius: 8px;
@@ -248,11 +248,13 @@ body {
 .team-section {
   text-align: center;
   padding: 50px 0;
-  margin-bottom: 150px;
+  margin-bottom: 40px;
 }
 
 .team-member img {
   max-width: 100%;
+  width: 85%;
+  margin-top: 30px;
   border-radius: 8px;
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
 }
@@ -423,6 +425,12 @@ footer #copyright {
     width: 88px;
   }
 
+  .team-member img {
+    width: 180px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+  }
   
   .mission-parag {
     font-size: 0.8rem;
